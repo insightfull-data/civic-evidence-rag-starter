@@ -38,4 +38,3 @@ export async function traverseGraph(startNodeId, maxHops = 4) {
   );
   return result.rows;
 }
-
