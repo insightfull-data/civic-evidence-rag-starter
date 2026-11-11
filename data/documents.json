@@ -1,0 +1,30 @@
+[
+  {
+    "id": "central-station-guide",
+    "title": "Central Station interchange guide",
+    "content": "Central Station is served by the Blue Line. Surface routes 10 and 20 stop beside the station. A closure may cause riders to consider nearby services, but this record does not measure passenger demand or replacement capacity.",
+    "source": "Fictional City Transit guide",
+    "asOf": "2026-01-15"
+  },
+  {
+    "id": "route-10-profile",
+    "title": "Route 10 North-South profile",
+    "content": "Route 10 connects Central Station with North Market and River Park. It serves the Downtown and Northside districts.",
+    "source": "Fictional City route catalogue",
+    "asOf": "2026-01-15"
+  },
+  {
+    "id": "route-20-profile",
+    "title": "Route 20 Crosstown profile",
+    "content": "Route 20 connects Central Station with West Library and East Hospital. It serves the West End, Downtown and Eastside districts.",
+    "source": "Fictional City route catalogue",
+    "asOf": "2026-01-15"
+  },
+  {
+    "id": "evidence-limits",
+    "title": "How to interpret network connections",
+    "content": "A mapped connection indicates potential network reach. It does not prove that residents were affected, that a rider transferred, or that another service had enough capacity. Those claims require observed demand, travel behaviour and service-capacity evidence.",
+    "source": "Starter methodology",
+    "asOf": "2026-01-15"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {"id":"line-blue","type":"LINE","name":"Blue Line"},
+    {"id":"station-west","type":"STATION","name":"West Station"},
+    {"id":"station-central","type":"STATION","name":"Central Station"},
+    {"id":"station-east","type":"STATION","name":"East Station"},
+    {"id":"route-10","type":"ROUTE","name":"Route 10 North-South"},
+    {"id":"route-20","type":"ROUTE","name":"Route 20 Crosstown"},
+    {"id":"route-30","type":"ROUTE","name":"Route 30 Riverside"},
+    {"id":"district-west","type":"DISTRICT","name":"West End"},
+    {"id":"district-downtown","type":"DISTRICT","name":"Downtown"},
+    {"id":"district-north","type":"DISTRICT","name":"Northside"},
+    {"id":"district-east","type":"DISTRICT","name":"Eastside"}
+  ],
+  "edges": [
+    {"from":"station-west","to":"line-blue","type":"ON_LINE","source":"network-map"},
+    {"from":"station-central","to":"line-blue","type":"ON_LINE","source":"network-map"},
+    {"from":"station-east","to":"line-blue","type":"ON_LINE","source":"network-map"},
+    {"from":"station-west","to":"station-central","type":"NEXT_STATION","source":"network-map"},
+    {"from":"station-central","to":"station-east","type":"NEXT_STATION","source":"network-map"},
+    {"from":"station-central","to":"route-10","type":"CONNECTS_TO","source":"stop-catalogue"},
+    {"from":"station-central","to":"route-20","type":"CONNECTS_TO","source":"stop-catalogue"},
+    {"from":"station-east","to":"route-30","type":"CONNECTS_TO","source":"stop-catalogue"},
+    {"from":"station-central","to":"district-downtown","type":"IN_DISTRICT","source":"district-boundaries"},
+    {"from":"route-10","to":"district-downtown","type":"SERVES_DISTRICT","source":"route-shapes"},
+    {"from":"route-10","to":"district-north","type":"SERVES_DISTRICT","source":"route-shapes"},
+    {"from":"route-20","to":"district-west","type":"SERVES_DISTRICT","source":"route-shapes"},
+    {"from":"route-20","to":"district-downtown","type":"SERVES_DISTRICT","source":"route-shapes"},
+    {"from":"route-20","to":"district-east","type":"SERVES_DISTRICT","source":"route-shapes"},
+    {"from":"route-30","to":"district-east","type":"SERVES_DISTRICT","source":"route-shapes"}
+  ]
+}

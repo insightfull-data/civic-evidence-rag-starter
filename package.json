@@ -1,0 +1,24 @@
+{
+  "name": "civic-evidence-rag-starter",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A small, evidence-first RAG and GraphRAG starter using fictional civic transit data.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/init-db.js",
+    "db:seed": "node scripts/seed-db.js",
+    "db:setup": "npm run db:init && npm run db:seed",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.77.0",
+    "pg": "^8.13.1"
+  }
+}

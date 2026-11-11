@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare ordinary RAG with bounded GraphRAG using fictional civic transit data.">
+  <title>Civic Evidence RAG Starter</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header><div class="brand"><span class="mark" aria-hidden="true">▥</span><div><strong>Civic Evidence RAG Starter</strong><small>Fictional data · reproducible relationships</small></div></div><a href="https://github.com/insightfull-data/civic-evidence-rag-starter">View on GitHub</a></header>
+  <main>
+    <section class="hero"><p class="eyebrow">RAG + BOUNDED GRAPHRAG</p><h1>Retrieval finds the records.<br>The graph traces the relationships.</h1><p>Ask what happens around a fictional station closure. The demo retrieves supporting records, traverses sourced network connections, and states what the evidence cannot prove.</p></section>
+    <section class="ask-card">
+      <label for="question">Your question</label>
+      <div class="ask-row"><textarea id="question">If Central Station closes, which routes and districts are connected to the affected part of the network?</textarea><button id="ask">Ask</button></div>
+      <p class="hint">Try the sample question first. The network contains no real people, places or services.</p>
+    </section>
+    <section id="status" class="status" hidden></section>
+    <section id="result" class="result" hidden>
+      <article><p id="mode" class="badge"></p><h2>Evidence-grounded answer</h2><p id="summary" class="summary"></p><ul id="findings"></ul><div class="limits"><strong>Evidence limit</strong><p id="limits"></p></div></article>
+      <aside><h2>Evidence path</h2><div id="method" class="method"></div><h3>Graph relationships</h3><div id="graph" class="graph"></div><h3>Retrieved records</h3><div id="documents"></div></aside>
+    </section>
+    <section class="principles"><h2>What this starter demonstrates</h2><div class="grid"><div><strong>Governed evidence</strong><p>Answers use a small, inspectable dataset rather than unrestricted web claims.</p></div><div><strong>Bounded traversal</strong><p>The graph follows approved relationship types and a fixed hop limit.</p></div><div><strong>Clear limits</strong><p>A network connection is never presented as proof of passenger impact.</p></div></div></section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
